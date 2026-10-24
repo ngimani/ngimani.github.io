@@ -159,6 +159,13 @@ svg.pie { width: 160px; height: 160px; transform: rotate(-90deg); }
 @media (max-width: 860px) { .keywords-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 540px) { .keywords-grid { grid-template-columns: minmax(0, 1fr); } }
 
+.value-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.value-card { background: var(--white); border: 1px solid var(--rule); border-radius: 14px; padding: 22px 22px 20px; border-top: 3px solid var(--vc-color, var(--accent)); }
+.value-tag { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-bottom: 6px; }
+.value-title { font-size: 15px; font-weight: 700; margin-bottom: 8px; color: var(--ink); }
+.value-body { font-size: 13px; color: var(--ink2); line-height: 1.65; }
+@media (max-width: 700px) { .value-grid { grid-template-columns: minmax(0, 1fr); } }
+
 .rec-card { background: var(--white); border: 1px solid var(--rule); border-left: 3px solid var(--gold); border-radius: 16px; padding: 28px 32px; }
 .rec-text { font-size: 14.5px; line-height: 1.75; color: var(--ink2); margin: 0; }
 .rec-text p + p { margin-top: 12px; }
@@ -395,6 +402,32 @@ svg.pie { width: 160px; height: 160px; transform: rotate(-90deg); }
       <div class="kw-card" style="--kw-color:#4A2580"><div class="kw-title">ERP from the support desk</div><p class="kw-body">As first-line NetSuite support I fix problems for other teams, write the SOPs and train users. I understand the system beyond data entry.</p></div>
       <div class="kw-card" style="--kw-color:#C0392B"><div class="kw-title">Built tools the team uses</div><p class="kw-body">Led a load control system and packhouse workbench for both sites, and set up a daily estimate report that emails customers in PDF and Excel.</p></div>
       <div class="kw-card" style="--kw-color:#1A3A5C"><div class="kw-title">Two languages, two regions</div><p class="kw-body">French native, English fluent, with work experience in Central Africa and the GCC. Comfortable with suppliers and colleagues from both.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="sec-label">Strategic Value for Senior &amp; Consultancy Roles</h2>
+    <div class="value-grid">
+      <div class="value-card" style="--vc-color:#1A3A5C">
+        <div class="value-tag">ERP implementation</div>
+        <div class="value-title">I've seen a go-live from the floor</div>
+        <p class="value-body">I helped roll out NetSuite across the packhouse and logistics at Pure Harvest. That meant setting up modules, training the teams and getting the system into daily use. I know what makes adoption hold once the implementation partner has gone.</p>
+      </div>
+      <div class="value-card" style="--vc-color:#B8860B">
+        <div class="value-tag">Procure-to-pay controls</div>
+        <div class="value-title">I can review a P2P process from the inside</div>
+        <p class="value-body">I run comparative quotations, three-way matching and spend tracking against budget on around 1,000 purchase orders a month. I can see where a client's purchasing process leaks time or money because I work those steps every day.</p>
+      </div>
+      <div class="value-card" style="--vc-color:#1A5C3A">
+        <div class="value-tag">Process &amp; SOPs</div>
+        <div class="value-title">I write down how the work actually runs</div>
+        <p class="value-body">I write the SOPs our teams use and map how work passes between purchasing, stores, the packhouse and finance. I hold a Business Analysis &amp; Process Management certificate (Coursera, 2025).</p>
+      </div>
+      <div class="value-card" style="--vc-color:#4A2580">
+        <div class="value-tag">Reporting</div>
+        <div class="value-title">I build reports people open</div>
+        <p class="value-body">I'm a NetSuite Certified BI and Reporting Associate. I build saved searches and reports, and set up a daily estimate report that goes to customers in PDF and Excel.</p>
+      </div>
     </div>
   </section>
 

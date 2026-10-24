@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ndoko Paul Ngimani | Procurement &amp; Supply Chain</title>
+<meta name="description" content="Ndoko Paul Ngimani, procurement and supply chain professional in the UAE. Purchasing, inventory control and Oracle NetSuite.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Outfit:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  color-scheme: light;
+  --white: #FFFFFF;
+  --off: #F7F6F3;
+  --off2: #EEECEA;
+  --ink: #1A1714;
+  --ink2: #3D3730;
+  --muted: #7D746B;
+  --rule: #DDD8D2;
+  --gold: #B8860B;
+  --gold-light: #F5EDD6;
+  --gold-mid: #D4A830;
+  --gold-ink: #7A5800;
+  --accent: #1A3A5C;
+  --accent-light: #E8EFF6;
+  --accent2: #C0392B;
+  --green: #1A5C3A;
+  --green-light: #E8F5EE;
+  --purple: #4A2580;
+  --purple-light: #EEE8F8;
+  --display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --sans: 'Outfit', 'Segoe UI', Helvetica, Arial, sans-serif;
+  --mono: 'DM Mono', ui-monospace, Menlo, Consolas, monospace;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { background: var(--off); font-family: var(--sans); font-size: 14px; color: var(--ink); line-height: 1.5; margin: 0; }
+img { max-width: 100%; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+p { margin: 0; }
+
+.page {
+  max-width: 1080px; margin: 0 auto;
+  padding-block: 56px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+@media (min-width: 900px) { .page { padding-left: 40px; padding-right: 40px; } }
+
+.header {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 32px 40px; align-items: start;
+  border-bottom: 2px solid var(--ink); padding-bottom: 32px; margin-bottom: 48px;
+}
+.eyebrow { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 8px; }
+.name { font-family: var(--display); font-size: clamp(40px, 6vw, 68px); font-weight: 800; line-height: 1; letter-spacing: -1px; margin: 0; text-wrap: balance; }
+.name span { color: var(--accent); }
+.headline { margin-top: 14px; font-size: 15px; font-weight: 500; color: var(--ink2); max-width: 580px; line-height: 1.6; }
+.headline strong { color: var(--accent); }
+.header-right { display: flex; flex-direction: column; gap: 8px; align-items: flex-end; text-align: right; padding-top: 6px; }
+.contact-line { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+.contact-line a { color: var(--ink2); text-decoration: none; }
+.contact-line a:hover { color: var(--accent); text-decoration: underline; }
+.contact-icon { width: 18px; height: 18px; border-radius: 4px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 9px; color: var(--white); flex-shrink: 0; }
+.avail-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--green-light); color: var(--green); border: 1px solid rgba(26,92,58,.2); padding: 5px 12px; border-radius: 20px; font-size: 11px; font-weight: 600; margin-top: 6px; letter-spacing: .5px; }
+.avail-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+@media (prefers-reduced-motion: no-preference) {
+  .avail-dot { animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100% { opacity: 1 } 50% { opacity: .4 } }
+}
+@media (max-width: 700px) {
+  .header { grid-template-columns: minmax(0, 1fr); }
+  .header-right { align-items: flex-start; text-align: left; }
+}
+
+.sec-label { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--muted); font-weight: 600; display: flex; align-items: center; gap: 14px; margin: 0 0 20px; }
+.sec-label::before { content: ''; width: 24px; height: 2px; background: var(--gold); flex-shrink: 0; }
+.sec-label::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
+.block { margin-bottom: 40px; }
+
+.exec-summary { background: var(--accent); color: var(--white); border-radius: 16px; padding: 32px 36px; position: relative; overflow: hidden; }
+.exec-summary::after { content: '\201C'; position: absolute; right: 28px; top: -10px; font-family: var(--display); font-size: 160px; color: rgba(255,255,255,.06); line-height: 1; pointer-events: none; }
+.exec-summary-label { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,.6); margin-bottom: 12px; font-weight: 600; }
+.exec-summary-text { font-size: 15px; line-height: 1.75; color: rgba(255,255,255,.92); max-width: 840px; }
+.exec-summary-text strong { color: #F5D98C; font-weight: 600; }
+@media (max-width: 600px) { .exec-summary { padding: 26px 22px; } }
+
+.metrics-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.metric-card { background: var(--white); border: 1px solid var(--rule); border-radius: 12px; padding: 22px 18px; position: relative; overflow: hidden; }
+.metric-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--bar-color, var(--gold)); }
+.metric-num { font-family: var(--display); font-size: 40px; font-weight: 800; line-height: 1; letter-spacing: -1px; font-variant-numeric: tabular-nums; }
+.metric-num sup { font-size: 18px; letter-spacing: 0; }
+.metric-label { font-size: 12px; color: var(--muted); margin-top: 6px; font-weight: 500; line-height: 1.4; }
+.metric-delta { margin-top: 8px; font-size: 11px; font-weight: 600; color: var(--green); }
+@media (max-width: 760px) { .metrics-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.two-col { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; }
+@media (max-width: 760px) { .two-col { grid-template-columns: minmax(0, 1fr); } }
+.wcard { background: var(--white); border: 1px solid var(--rule); border-radius: 16px; padding: 28px; min-width: 0; }
+@media (max-width: 600px) { .wcard { padding: 22px 18px; } }
+
+.pie-container { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+.pie-svg-wrap { position: relative; flex-shrink: 0; width: 160px; height: 160px; }
+svg.pie { width: 160px; height: 160px; transform: rotate(-90deg); }
+.pie-mid { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.pie-mid-num { font-family: var(--display); font-size: 26px; font-weight: 800; }
+.pie-mid-sub { font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
+.legend { display: flex; flex-direction: column; gap: 8px; flex: 1; min-width: 200px; }
+.leg-row { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink2); }
+.leg-swatch { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
+.leg-pct { margin-left: auto; font-family: var(--mono); font-size: 12px; font-weight: 500; color: var(--ink); }
+
+.timeline { position: relative; }
+.timeline::before { content: ''; position: absolute; left: 17px; top: 8px; bottom: 8px; width: 1px; background: linear-gradient(to bottom, var(--gold), var(--rule)); }
+.tl-item { display: flex; gap: 18px; margin-bottom: 26px; }
+.tl-item:last-child { margin-bottom: 0; }
+.tl-bullet { width: 34px; height: 34px; border-radius: 50%; background: var(--white); border: 2px solid var(--rule); display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; z-index: 1; position: relative; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.tl-bullet.current { border-color: var(--gold); background: var(--gold-light); }
+.tl-right { flex: 1; min-width: 0; padding-top: 4px; }
+.tl-co { font-weight: 700; font-size: 15px; }
+.tl-role { font-size: 13px; color: var(--accent); font-weight: 600; margin: 2px 0 1px; }
+.tl-period { font-size: 11px; color: var(--muted); font-family: var(--mono); letter-spacing: .5px; }
+.tl-win { font-size: 12.5px; color: var(--ink2); margin-top: 6px; line-height: 1.55; }
+.tl-chips { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 8px; }
+.chip { font-size: 10.5px; padding: 2px 8px; border-radius: 20px; font-weight: 600; background: var(--accent-light); color: var(--accent); border: 1px solid rgba(26,58,92,.12); }
+.chip.gold { background: var(--gold-light); color: var(--gold-ink); border-color: rgba(184,134,11,.2); }
+
+.comp-bars { display: flex; flex-direction: column; gap: 14px; }
+.cb-head { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 5px; }
+.cb-name { font-size: 13px; font-weight: 600; color: var(--ink2); }
+.cb-pct { font-size: 11px; font-family: var(--mono); color: var(--muted); white-space: nowrap; }
+.cb-track { height: 5px; border-radius: 3px; background: var(--off2); overflow: hidden; }
+.cb-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--accent), var(--gold-mid)); transform-origin: left; }
+@media (prefers-reduced-motion: no-preference) {
+  .cb-fill { animation: grow .9s cubic-bezier(.4,0,.2,1) both; }
+  @keyframes grow { from { transform: scaleX(.15) } to { transform: scaleX(1) } }
+}
+
+.sys-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.sys-pill { font-size: 11.5px; font-weight: 600; padding: 5px 13px; border-radius: 6px; border: 1px solid; letter-spacing: .3px; }
+.sys-blue { background: #EBF3FC; color: var(--accent); border-color: rgba(26,58,92,.2); }
+.sys-amber { background: var(--gold-light); color: var(--gold-ink); border-color: rgba(184,134,11,.2); }
+.sys-slate { background: var(--off2); color: var(--ink2); border-color: var(--rule); }
+.sys-green { background: var(--green-light); color: var(--green); border-color: rgba(26,92,58,.2); }
+.sys-purple { background: var(--purple-light); color: var(--purple); border-color: rgba(74,37,128,.2); }
+
+.cred { display: grid; gap: 12px; }
+.cred-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 16px; padding-bottom: 12px; border-bottom: 1px solid var(--rule); }
+.cred-row:last-child { border-bottom: 0; padding-bottom: 0; }
+.cred-name { font-size: 13px; font-weight: 600; color: var(--ink); }
+.cred-meta { font-size: 11.5px; color: var(--muted); overflow-wrap: anywhere; }
+.cred-date { font-family: var(--mono); font-size: 11.5px; color: var(--ink2); white-space: nowrap; }
+.cred-date.prog { color: var(--gold-ink); }
+
+.keywords-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.kw-card { background: var(--white); border: 1px solid var(--rule); border-radius: 12px; padding: 18px 16px; border-left: 3px solid var(--kw-color, var(--accent)); }
+.kw-title { font-size: 13px; font-weight: 700; margin-bottom: 6px; letter-spacing: .2px; }
+.kw-body { font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+@media (max-width: 860px) { .keywords-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 540px) { .keywords-grid { grid-template-columns: minmax(0, 1fr); } }
+
+.path-bar { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 6px 0; background: var(--white); border: 1px solid var(--rule); border-radius: 12px; padding: 16px 20px; }
+.path-node { display: flex; align-items: center; }
+.path-pill { padding: 7px 14px; border-radius: 6px; font-size: 11.5px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
+.path-pill.done { color: var(--ink2); }
+.path-pill.now { background: var(--accent); color: var(--white); }
+.path-pill.goal { background: var(--gold-light); color: var(--gold-ink); }
+.path-arrow { color: var(--muted); font-size: 16px; padding: 0 2px; }
+
+.goals-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.goal-tile { background: var(--white); border: 1px solid var(--rule); border-radius: 14px; padding: 20px 16px; text-align: center; position: relative; overflow: hidden; }
+.goal-tile::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gt-color, var(--gold)); }
+.goal-icon { font-size: 26px; margin-bottom: 10px; }
+.goal-text { font-size: 12.5px; font-weight: 600; color: var(--ink2); line-height: 1.5; }
+@media (max-width: 760px) { .goals-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.footer { border-top: 1px solid var(--rule); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--muted); flex-wrap: wrap; gap: 8px; }
+.footer-brand { font-family: var(--display); font-size: 15px; font-weight: 700; color: var(--ink); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="header">
+    <div>
+      <div class="eyebrow">Procurement &amp; Supply Chain · Open to New Roles</div>
+      <h1 class="name">Ndoko Paul <span>Ngimani</span></h1>
+      <p class="headline"><strong>Operations Excellence Coordinator – Supply Chain &amp; ERP</strong> with six years in food operations. I run purchasing, inventory and dispatch for a fresh produce business in the UAE, across two packhouses, on Oracle NetSuite.</p>
+    </div>
+    <div class="header-right">
+      <div class="contact-line"><span class="contact-icon">📍</span>Al Ain, Abu Dhabi, UAE</div>
+      <div class="contact-line"><span class="contact-icon">✉</span><a href="mailto:paulndoko@gmail.com">paulndoko@gmail.com</a></div>
+      <div class="contact-line"><span class="contact-icon">☎</span>+971 58 916 9760</div>
+      <div class="contact-line"><span class="contact-icon">🔗</span><a href="https://www.linkedin.com/in/paulndoko" target="_blank" rel="noopener">linkedin.com/in/paulndoko</a></div>
+      <div class="contact-line"><span class="contact-icon">✈</span>Open to relocation</div>
+      <span class="avail-badge"><span class="avail-dot"></span>Open to Procurement Roles</span>
+    </div>
+  </header>
+
+  <section class="block">
+    <h2 class="sec-label">Summary</h2>
+    <div class="exec-summary">
+      <div class="exec-summary-label">What I bring</div>
+      <p class="exec-summary-text">I joined <strong>Pure Harvest Smart Farms</strong> in 2021 as a Team Leader and now coordinate supply chain and ERP operations. Each month I handle <strong>around 1,000 purchase orders</strong>, from the requisition and comparative quotes through to <strong>three-way matching</strong> before payment. I keep <strong>about 400 SKUs</strong> reconciled across two sites, plan daily dispatch, and lead a packhouse team of <strong>80 people</strong>. I'm also the first person the growing, packhouse and commercial teams call when NetSuite gives them trouble. I'm studying for the <strong>CIPS Level 4 Diploma</strong> and want my next role to be in procurement.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="sec-label">Key Figures</h2>
+    <div class="metrics-row">
+      <div class="metric-card" style="--bar-color: #B8860B">
+        <div class="metric-num">1,000<sup>+</sup></div>
+        <div class="metric-label">Purchase orders handled each month at Pure Harvest</div>
+        <div class="metric-delta">▲ Requisition to payment</div>
+      </div>
+      <div class="metric-card" style="--bar-color: #1A3A5C">
+        <div class="metric-num">400</div>
+        <div class="metric-label">SKUs counted and reconciled in NetSuite</div>
+        <div class="metric-delta">▲ Two sites, perishable stock</div>
+      </div>
+      <div class="metric-card" style="--bar-color: #1A5C3A">
+        <div class="metric-num">80</div>
+        <div class="metric-label">Packhouse staff led across Al Ain and Oasis</div>
+        <div class="metric-delta">▲ HACCP-compliant operation</div>
+      </div>
+      <div class="metric-card" style="--bar-color: #4A2580">
+        <div class="metric-num">6<sup>yrs</sup></div>
+        <div class="metric-label">Operations experience in the UAE and Cameroon</div>
+        <div class="metric-delta">▲ Food, logistics, ERP</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="two-col block" aria-label="Expertise">
+    <div class="wcard">
+      <h2 class="sec-label" style="margin-bottom:18px">Where My Time Goes</h2>
+      <div class="pie-container">
+        <div class="pie-svg-wrap">
+          <svg class="pie" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="38" fill="none" stroke="#1A3A5C" stroke-width="20" stroke-dasharray="83.6 155.2" stroke-dashoffset="0"/>
+            <circle cx="50" cy="50" r="38" fill="none" stroke="#B8860B" stroke-width="20" stroke-dasharray="59.7 179.1" stroke-dashoffset="-83.6"/>
+            <circle cx="50" cy="50" r="38" fill="none" stroke="#C0392B" stroke-width="20" stroke-dasharray="35.8 203" stroke-dashoffset="-143.3"/>
+            <circle cx="50" cy="50" r="38" fill="none" stroke="#4A2580" stroke-width="20" stroke-dasharray="35.8 203" stroke-dashoffset="-179.1"/>
+            <circle cx="50" cy="50" r="38" fill="none" stroke="#1A5C3A" stroke-width="20" stroke-dasharray="23.9 214.9" stroke-dashoffset="-214.9"/>
+          </svg>
+          <div class="pie-mid"><div class="pie-mid-num">5</div><div class="pie-mid-sub">Core<br>Areas</div></div>
+        </div>
+        <div class="legend">
+          <div class="leg-row"><span class="leg-swatch" style="background:#1A3A5C"></span>Purchasing &amp; procure-to-pay<span class="leg-pct">35%</span></div>
+          <div class="leg-row"><span class="leg-swatch" style="background:#B8860B"></span>Inventory control<span class="leg-pct">25%</span></div>
+          <div class="leg-row"><span class="leg-swatch" style="background:#C0392B"></span>Dispatch &amp; load planning<span class="leg-pct">15%</span></div>
+          <div class="leg-row"><span class="leg-swatch" style="background:#4A2580"></span>Team leadership &amp; HACCP<span class="leg-pct">15%</span></div>
+          <div class="leg-row"><span class="leg-swatch" style="background:#1A5C3A"></span>NetSuite user support<span class="leg-pct">10%</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="wcard">
+      <h2 class="sec-label" style="margin-bottom:18px">Industry Experience</h2>
+      <div class="pie-container">
+        <div class="pie-svg-wrap">
+          <svg class="pie" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="38" fill="none" stroke="#1A3A5C" stroke-width="20" stroke-dasharray="143.3 95.5" stroke-dashoffset="0"/>
+            <circle cx="50" cy="50" r="38" fill="none" stroke="#B8860B" stroke-width="20" stroke-dasharray="47.8 191" stroke-dashoffset="-143.3"/>
+            <circle cx="50" cy="50" r="38" fill="none" stroke="#C0392B" stroke-width="20" stroke-dasharray="23.9 214.9" stroke-dashoffset="-191.1"/>
+            <circle cx="50" cy="50" r="38" fill="none" stroke="#4A2580" stroke-width="20" stroke-dasharray="23.9 214.9" stroke-dashoffset="-215"/>
+          </svg>
+          <div class="pie-mid"><div class="pie-mid-num">4</div><div class="pie-mid-sub">Industry<br>Areas</div></div>
+        </div>
+        <div class="legend">
+          <div class="leg-row"><span class="leg-swatch" style="background:#1A3A5C"></span>Fresh produce &amp; food manufacturing<span class="leg-pct">60%</span></div>
+          <div class="leg-row"><span class="leg-swatch" style="background:#B8860B"></span>ERP &amp; digital operations<span class="leg-pct">20%</span></div>
+          <div class="leg-row"><span class="leg-swatch" style="background:#C0392B"></span>Port &amp; logistics operations<span class="leg-pct">10%</span></div>
+          <div class="leg-row"><span class="leg-swatch" style="background:#4A2580"></span>Market research &amp; sales<span class="leg-pct">10%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="two-col block" aria-label="Career and competencies">
+    <div class="wcard">
+      <h2 class="sec-label">Career Progression</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-bullet current">🌱</div>
+          <div class="tl-right">
+            <div class="tl-co">Pure Harvest Smart Farms</div>
+            <div class="tl-role">Operations Excellence Coordinator – Supply Chain &amp; ERP</div>
+            <div class="tl-period">2021 – PRESENT · AL AIN, UAE</div>
+            <p class="tl-win">Joined as Team Leader, then Senior Team Leader. Handle around 1,000 POs a month with comparative quotes, three-way matching, supplier returns and spend reporting. Reconcile 400 SKUs, plan dispatch from two sites and lead a team of 80. First-line NetSuite support for three departments.</p>
+            <div class="tl-chips"><span class="chip">Procure-to-Pay</span><span class="chip">NetSuite</span><span class="chip">Inventory</span><span class="chip gold">1,000 POs / month</span></div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-bullet">📦</div>
+          <div class="tl-right">
+            <div class="tl-co">APEC</div>
+            <div class="tl-role">Operations Coordinator</div>
+            <div class="tl-period">2018 – 2019 · CAMEROON</div>
+            <p class="tl-win">Coordinated day-to-day operations in Cameroon before moving to the UAE.</p>
+            <div class="tl-chips"><span class="chip">Operations</span><span class="chip">Coordination</span></div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-bullet">⚓</div>
+          <div class="tl-right">
+            <div class="tl-co">Port Authority of Limbe</div>
+            <div class="tl-role">Operations Intern</div>
+            <div class="tl-period">2016 · LIMBE, CAMEROON</div>
+            <p class="tl-win">First hands-on experience of port and logistics operations.</p>
+            <div class="tl-chips"><span class="chip">Port Operations</span><span class="chip">Logistics</span></div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-bullet">🎓</div>
+          <div class="tl-right">
+            <div class="tl-co">University of Buea</div>
+            <div class="tl-role">BSc Management</div>
+            <div class="tl-period">2018 · CAMEROON</div>
+            <p class="tl-win">Research project on how market segmentation affects product sales, with Du Pay Cameroon as the case study.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wcard">
+      <h2 class="sec-label">Core Competencies</h2>
+      <div class="comp-bars">
+        <div><div class="cb-head"><span class="cb-name">Purchasing &amp; PO Management</span><span class="cb-pct">Advanced</span></div><div class="cb-track"><div class="cb-fill" style="width:88%"></div></div></div>
+        <div><div class="cb-head"><span class="cb-name">Three-way Matching &amp; Invoice Checks</span><span class="cb-pct">Advanced</span></div><div class="cb-track"><div class="cb-fill" style="width:86%"></div></div></div>
+        <div><div class="cb-head"><span class="cb-name">Inventory Control &amp; Reconciliation</span><span class="cb-pct">Advanced</span></div><div class="cb-track"><div class="cb-fill" style="width:86%"></div></div></div>
+        <div><div class="cb-head"><span class="cb-name">Team Leadership</span><span class="cb-pct">Advanced</span></div><div class="cb-track"><div class="cb-fill" style="width:85%"></div></div></div>
+        <div><div class="cb-head"><span class="cb-name">Oracle NetSuite (P2P, Inventory, Reports)</span><span class="cb-pct">Advanced</span></div><div class="cb-track"><div class="cb-fill" style="width:84%"></div></div></div>
+        <div><div class="cb-head"><span class="cb-name">Supplier Coordination &amp; Returns</span><span class="cb-pct">Proficient</span></div><div class="cb-track"><div class="cb-fill" style="width:76%"></div></div></div>
+        <div><div class="cb-head"><span class="cb-name">Dispatch &amp; Load Planning</span><span class="cb-pct">Proficient</span></div><div class="cb-track"><div class="cb-fill" style="width:76%"></div></div></div>
+        <div><div class="cb-head"><span class="cb-name">Spend Tracking &amp; Excel Reporting</span><span class="cb-pct">Proficient</span></div><div class="cb-track"><div class="cb-fill" style="width:72%"></div></div></div>
+        <div><div class="cb-head"><span class="cb-name">SAP</span><span class="cb-pct">In training</span></div><div class="cb-track"><div class="cb-fill" style="width:45%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="two-col block" aria-label="Systems and certifications">
+    <div class="wcard">
+      <h2 class="sec-label">Systems &amp; Skills</h2>
+      <div class="sys-grid">
+        <span class="sys-pill sys-blue">Oracle NetSuite</span>
+        <span class="sys-pill sys-blue">NetSuite Saved Searches</span>
+        <span class="sys-pill sys-blue">NetSuite Work Orders</span>
+        <span class="sys-pill sys-blue">SAP (training)</span>
+        <span class="sys-pill sys-slate">Advanced Excel</span>
+        <span class="sys-pill sys-slate">Microsoft Office</span>
+        <span class="sys-pill sys-amber">Purchase Requisitions</span>
+        <span class="sys-pill sys-amber">Comparative Quotations</span>
+        <span class="sys-pill sys-amber">Three-way Matching</span>
+        <span class="sys-pill sys-amber">Spend vs Budget</span>
+        <span class="sys-pill sys-green">Cycle Counts</span>
+        <span class="sys-pill sys-green">Stock Rotation</span>
+        <span class="sys-pill sys-green">Load Planning</span>
+        <span class="sys-pill sys-purple">SOP Writing</span>
+        <span class="sys-pill sys-purple">HACCP</span>
+        <span class="sys-pill sys-purple">User Training</span>
+        <span class="sys-pill sys-slate">English · Fluent</span>
+        <span class="sys-pill sys-slate">French · Native</span>
+      </div>
+    </div>
+    <div class="wcard">
+      <h2 class="sec-label">Certifications</h2>
+      <div class="cred">
+        <div class="cred-row"><div><div class="cred-name">CIPS Level 4 Diploma in Procurement &amp; Supply</div><div class="cred-meta">Chartered Institute of Procurement &amp; Supply</div></div><div class="cred-date prog">In progress</div></div>
+        <div class="cred-row"><div><div class="cred-name">Certified International Supply Chain Manager (CISCM), Merit</div><div class="cred-meta">IPSCMI · ID CISCM2250139219 · valid to Jan 2030</div></div><div class="cred-date">Jan 2025</div></div>
+        <div class="cred-row"><div><div class="cred-name">Certified International Supply Chain Professional (CISCP), Merit</div><div class="cred-meta">IPSCMI · ID CISCP2250141448 · valid to Jan 2030</div></div><div class="cred-date">Jan 2025</div></div>
+        <div class="cred-row"><div><div class="cred-name">NetSuite Certified BI and Reporting Associate</div><div class="cred-meta">Oracle</div></div><div class="cred-date">Nov 2025</div></div>
+        <div class="cred-row"><div><div class="cred-name">OCI 2025 Certified AI Foundations Associate</div><div class="cred-meta">Oracle · valid to Jul 2027</div></div><div class="cred-date">Jul 2025</div></div>
+        <div class="cred-row"><div><div class="cred-name">Business Analysis &amp; Process Management</div><div class="cred-meta">Coursera · <a href="https://coursera.org/verify/MRUT2K2WKDUK" target="_blank" rel="noopener">verify</a></div></div><div class="cred-date">Jun 2025</div></div>
+        <div class="cred-row"><div><div class="cred-name">HACCP Certification</div><div class="cred-meta">Food safety</div></div><div class="cred-date">2025</div></div>
+        <div class="cred-row"><div><div class="cred-name">McKinsey Forward Programme</div><div class="cred-meta">McKinsey &amp; Company</div></div><div class="cred-date">Completed</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="sec-label">What I Bring to a Procurement Team</h2>
+    <div class="keywords-grid">
+      <div class="kw-card" style="--kw-color:#1A3A5C"><div class="kw-title">The full purchase cycle</div><p class="kw-body">I work every step of a purchase myself: requisition, quotes, PO, receipt, invoice match and spend report. I know where things go wrong between those steps.</p></div>
+      <div class="kw-card" style="--kw-color:#B8860B"><div class="kw-title">Volume without losing accuracy</div><p class="kw-body">Around 1,000 POs a month leaves no room for loose records. I check invoices against the PO and delivery note before anything is paid.</p></div>
+      <div class="kw-card" style="--kw-color:#1A5C3A"><div class="kw-title">Stock that matches the system</div><p class="kw-body">Fresh produce spoils, so stock counts, variance checks and first-in-first-out rotation are part of my daily routine across two sites.</p></div>
+      <div class="kw-card" style="--kw-color:#4A2580"><div class="kw-title">ERP from the support desk</div><p class="kw-body">As first-line NetSuite support I fix problems for other teams, write the SOPs and train users. I understand the system beyond data entry.</p></div>
+      <div class="kw-card" style="--kw-color:#C0392B"><div class="kw-title">Built tools the team uses</div><p class="kw-body">Led a load control system and packhouse workbench for both sites, and set up a daily estimate report that emails customers in PDF and Excel.</p></div>
+      <div class="kw-card" style="--kw-color:#1A3A5C"><div class="kw-title">Two languages, two regions</div><p class="kw-body">French native, English fluent, with work experience in Central Africa and the GCC. Comfortable with suppliers and colleagues from both.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="sec-label">Career Path</h2>
+    <div class="path-bar">
+      <div class="path-node"><span class="path-pill done">Intern</span><span class="path-arrow">›</span></div>
+      <div class="path-node"><span class="path-pill done">Coordinator</span><span class="path-arrow">›</span></div>
+      <div class="path-node"><span class="path-pill done">Team Leader</span><span class="path-arrow">›</span></div>
+      <div class="path-node"><span class="path-pill done">Senior Team Leader</span><span class="path-arrow">›</span></div>
+      <div class="path-node"><span class="path-pill now">Ops Excellence Coordinator</span><span class="path-arrow">›</span></div>
+      <div class="path-node"><span class="path-pill goal">Procurement Specialist</span><span class="path-arrow">›</span></div>
+      <div class="path-node"><span class="path-pill goal">Procurement Manager</span></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="sec-label">Next Steps</h2>
+    <div class="goals-grid">
+      <div class="goal-tile" style="--gt-color:#B8860B"><div class="goal-icon">📘</div><p class="goal-text">Complete the CIPS Level 4 Diploma in Procurement &amp; Supply</p></div>
+      <div class="goal-tile" style="--gt-color:#1A3A5C"><div class="goal-icon">🤝</div><p class="goal-text">Move into a dedicated procurement or buying role</p></div>
+      <div class="goal-tile" style="--gt-color:#1A5C3A"><div class="goal-icon">⚙️</div><p class="goal-text">Add SAP to my NetSuite experience</p></div>
+      <div class="goal-tile" style="--gt-color:#4A2580"><div class="goal-icon">🌍</div><p class="goal-text">Work on sourcing across the GCC and beyond</p></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span class="footer-brand">Ndoko Paul Ngimani</span>
+    <span>Procurement · Inventory · Dispatch · NetSuite ERP</span>
+    <span>Al Ain, UAE · <a href="mailto:paulndoko@gmail.com">paulndoko@gmail.com</a></span>
+  </footer>
+</div>
+</body>
+</html>
